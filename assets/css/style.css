@@ -1,0 +1,388 @@
+/* Global Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #343a40;
+    height: 70px;
+}
+
+.navbar .navbar-brand {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    color: #fff !important;
+    font-size: 18px;
+ /*    padding-left: 1rem;
+    padding-right: 1rem; */
+}
+
+.navbar .nav-link:hover {
+    color: #ff6600 !important;
+}
+
+.navbar .form-control {
+    width: 200px;
+}
+
+/* Hero Section */
+.hero {
+   background: url('../img/bg.jpg');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    
+}
+
+
+.hero .lead {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+   
+}
+
+.hero .btn-primary {
+    font-size: 1.25rem;
+    padding: 10px 30px;
+    background-color: #ff6600;
+    border-color: #ff6600;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+    background-color: #e65c00;
+    border-color: #e65c00;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.services .card {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.services .card-body {
+    text-align: center;
+}
+
+.services .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.services .card-text {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* /* Portfolio Section */
+.portfolio {
+    background-color: #333;
+    color: white;
+    padding: 60px 0;
+}
+
+.portfolio h2 {
+    margin-bottom: 2rem;
+}
+
+.portfolio-item {
+    height: 250px;
+    background-color: #555;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-item:hover {
+    background-color: #444;
+}
+
+.portfolio a {
+    color: #ff6600;
+}
+
+.portfolio .row {
+    justify-content: center;
+}
+
+.portfolio .btn-outline-light {
+    margin-top: 2rem;
+    border: 2px solid #fff;
+    color: white;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.portfolio .btn-outline-light:hover {
+    background-color: #fff;
+    color: #343a40;
+} */
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.testimonials blockquote {
+    font-size: 1.25rem;
+    color: #333;
+    font-style: italic;
+}
+
+.testimonials blockquote footer {
+    font-size: 1rem;
+    color: #777;
+}
+
+.portfolio {
+    background-color: #f8f9fa;
+  }
+  
+  .portfolio h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .card-img-top {
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+.card .img1{
+    background: url("../img/web-development.jpg");
+    height: 300px;
+    background-size: cover;
+} 
+.card .img2{
+    background: url("../img/task_management.jpg");
+    height: 300px;
+    background-size: cover;
+}   
+.card .img3{
+    background: url("../img/seo.avif");
+    height: 300px;
+    background-size: cover;
+}  
+ 
+/* Media Queries for Responsiveness */
+
+/* Small screens */
+@media (max-width: 767px) {
+    .navbar .form-control {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .lead {
+        font-size: 1rem;
+    }
+
+    .services .card-body {
+        padding: 1.5rem;
+    }
+
+    .portfolio-item {
+        height: 200px;
+    }
+
+    footer .col-md-3 {
+        margin-bottom: 2rem;
+    }
+
+    footer .btn-primary {
+        width: 100%;
+    }
+}
+.contact-us {
+    background-color: #f9f9f9;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.contact-us .form-label {
+    font-weight: bold;
+}
+
+.contact-us .form-control {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.contact-us button {
+    background-color: #ff6600;
+    border-color: #ff6600;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    color: white;
+    border-radius: 5px;
+}
+
+.contact-us button:hover {
+    background-color: #e65c00;
+    border-color: #e65c00;
+}
+.about-us {
+    background-color: #f9f9f9;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.about-us h3 {
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.about-us p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.about-us ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.about-us ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.about-us .team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.about-us .team-member h5 {
+    margin-top: 10px;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.about-us .team-member p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.team {
+    margin-top: 60px;
+}
+
+.team .row {
+    justify-content: center;
+}
+
+.team .col-md-4 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
+   
+    .services .card-body {
+        padding: 1.5rem;
+    }
+
+    .portfolio-item {
+        height: 220px;
+    }
+
+    footer .btn-primary {
+        width: 50%;
+    }
+    .about-us h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-us p {
+        font-size: 0.95rem;
+    }
+
+    .team .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    .team .col-md-4 img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Large screens */
+@media (min-width: 992px) {
+    .services .card-body {
+        padding: 2rem;
+    }
+
+    .portfolio-item {
+        height: 250px;
+    }
+
+    footer .btn-primary {
+        width: auto;
+    }
+}
