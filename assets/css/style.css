@@ -6,13 +6,24 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family:'Times New Roman', Times, serif;
 }
-
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.active-link {
+    border-bottom: 2px solid #fff;
+}
 /* Navbar */
 .navbar {
     background-color: #343a40;
-    height: 70px;
+    height: 70px; 
 }
 
 .navbar .navbar-brand {
@@ -34,7 +45,10 @@ body {
 .navbar .form-control {
     width: 200px;
 }
-
+.navbar-collapse{
+    text-align: center;
+    padding-top: 10px;
+}
 /* Hero Section */
 .hero {
    background: url('../img/bg.jpg');
